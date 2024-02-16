@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/index.css">
     <title>Storefront</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/app.js"defer></script> 
 </head>
 <body>
-    <script src="index.js"></script> 
-    <h1>TEST</h1>
+    <header class="header"><h1>Want.Com</h1></header>
+    <nav id="navigation"></nav>
+    <div class="amazing-deals">
+          <h2>WE GOT AMAZING DEALS!!</h2>
+    </div>
+    <section id="featuredProducts"></section>
+    <footer class="footer">
+        <section>Telefon</section>
+        <section>Adresse</section>
+        <section>Email</section>
+    </footer>
+    <div id="welcomePopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Welcome to Want.com!</h2>
+            <p>Discover amazing products and great deals.</p>
+            <p><img src="/assets/images/loading.gif" alt="loadingScreen"></p>
+        </div>
+    </div>
 </body>
 </html>

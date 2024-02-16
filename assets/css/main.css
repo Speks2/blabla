@@ -1,0 +1,245 @@
+
+/* PRODUCTS  */
+#featuredProducts {
+    width: 100%;
+    height: 700px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+  }
+  
+  #featuredProducts figure {
+    width: 25%;
+    display: inline-block;
+    border: 5px solid black;
+    border-radius: 15px;
+    background-color: rgba(246, 231, 231, 0.947);
+    animation: changeColor 10s infinite;
+    transition: 600ms;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+  }
+  
+  #featuredProducts img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  #featuredProducts figure:hover {
+    filter: brightness(130%);
+
+  }
+
+  /* STYLING MAIN */
+  body {
+    background-color: rgb(171, 171, 171);
+      overflow: auto;
+      background-image: url(/assets/images/shopping.jpg);
+  }
+  .header{
+    background-color: rgb(9, 182, 225);
+    height: 7rem;
+    top: 0;
+    margin-top: -1.4rem;
+
+  }
+  .footer{
+    background-color: rgb(236, 137, 15);
+    height: 5rem;
+
+  }
+
+  .header h1 {
+    margin-left: 40%;
+    color: white;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    position: absolute;
+    cursor: pointer;
+  }
+  .header h1:hover {
+    transition: 800ms;
+    color: #1fe819;
+  }
+ 
+  .footer section {
+    margin-left: 50%;
+  }
+  
+  body, header, footer {
+    margin: 0;
+    padding: 0;
+   
+}
+/* amazing deals text */
+.amazing-deals h2 {
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  color: rgb(0, 17, 255);
+}
+
+/* POPUP */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #110ee3;
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+  /* opacity: calc(95%); */
+  width: 100%;
+  height: 100%;
+}
+
+.popup-content {
+  position: relative;
+  font-size: 3rem;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.close {
+  position: absolute;
+  top: -2rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 15px;
+  width: 2rem;
+}
+.close:hover {
+  background-color: rgb(56, 228, 17);
+  transition: 400ms;
+}
+/* POPUP END */
+
+/* COLOR CHANGING PRODUCTS TEXT  */
+@keyframes changeColor {
+  0% {
+      color: #00ff88; /* Start color (red) */
+  }
+  10% {
+    color: #9dff00; /* Start color (red) */
+}
+20% {
+  color: #07bf00; /* Start color (red) */
+}
+  30% {
+      color: #e2e208; /* Middle color (green) */
+  }
+  40% {
+    color: #ff9100; /* Middle color (green) */
+}
+50% {
+  color: #e6120a; /* Middle color (green) */
+}
+60% {
+  color: #0004ff; /* Middle color (green) */
+}
+70% {
+  color: #00d0ff; /* Middle color (green) */
+}
+80% {
+  color: #7b00ff; /* Middle color (green) */
+}
+90% {
+  color: #fb00ff; /* Middle color (green) */
+}
+  100% {
+      color: #c70b7f; /* End color (blue) */
+  }
+}
+/* __________________________________________________________ */
+
+
+/* MEDIA QUERIES RESPONSIVE */
+@media only screen and (max-width: 600px) {
+
+  #featuredProducts {
+    width: 100%;
+    height: 700px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+  }
+  
+  #featuredProducts figure {
+    width: 25%;
+    display: inline-block;
+    border: 5px solid black;
+    border-radius: 15px;
+    
+  }
+  
+  #featuredProducts img {
+    max-height: 300px;
+    max-width: 100%;
+  }
+
+  .header{
+    background-color: rgb(34, 9, 225);
+    height: 7rem;
+  }
+  .footer{
+    background-color: rgba(236, 15, 15, 0.797);
+    height: 5rem;
+   
+  }
+
+  .header h1 {
+    margin-left: 45%;
+    color: white;
+   
+  }
+ 
+  .footer section {
+    margin-left: 50%;
+  }
+  body, header, footer {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #110ee3;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+  opacity: calc(95%);
+  width: 100%;
+  height: 100%;
+  
+}
+
+.popup-content {
+  position: relative;
+  font-size: 3rem;
+  color: white;
+}
+
+.close {
+  position: absolute;
+  top: -2rem;
+  right: 1rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  background-color: red;
+  border-radius: 13px;
+  width: 1.5rem;
+}
+
+
+
+}
